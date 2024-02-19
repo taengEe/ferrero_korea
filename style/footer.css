@@ -1,0 +1,78 @@
+footer {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  background: #171717;
+}
+footer .hidden {
+  display: none;
+}
+footer .inner {
+  padding: 50px 0;
+  width: 1320px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+footer .inner .ft-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer .inner .ft-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .inner .ft-content > div {
+  width: 22.5%;
+}
+footer .inner .ft-content h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 25px;
+}
+footer .inner .ft-content h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+footer .inner .ft-content ul {
+  list-style: disc;
+  padding-left: 10%;
+}
+footer .inner .ft-content ul .ft-link {
+  margin-bottom: 25px;
+}
+footer .inner .ft-content ul .ft-link:last-of-type {
+  margin-bottom: 0;
+}
+footer .inner .ft-content ul .ft-link a {
+  color: #fff;
+}
+footer .inner .ft-content .sns ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  height: auto;
+}
+footer .inner .ft-content .sns ul li {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  footer .inner .ft-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .inner .ft-content > div {
+    width: 47.5%;
+  }
+  footer .inner .ft-content > div ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=footer.css.map */

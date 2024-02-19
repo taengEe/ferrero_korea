@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  transition: all 0.3s;
+}
+header.on {
+  background: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+header .wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .wrapper .inner {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 1320px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrapper .inner nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .wrapper .inner nav .pc-nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .wrapper .inner nav .pc-nav li {
+  padding: 2.5rem 57px;
+}
+header .wrapper .inner nav .pc-nav li:last-of-type {
+  padding-right: 0;
+}
+header .wrapper .inner nav .pc-nav li a {
+  font-size: 18px;
+  color: #fff;
+}
+header .wrapper .inner nav .pc-nav li a.on {
+  color: #333;
+}
+header .wrapper .inner nav .pc-nav li a.change {
+  color: #333;
+}
+header .wrapper .inner nav .mb-nav {
+  display: none;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+header .wrapper .inner nav .mb-nav span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background: #333;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+header .wrapper .inner nav .mb-nav span:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1260px) {
+  header .wrapper .inner nav {
+    white-space: nowrap;
+  }
+  header .wrapper .inner nav .pc-nav .nav-list a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background: #fff;
+  }
+  header .wrapper .inner {
+    position: relative;
+    padding: 0;
+    max-width: 90%;
+  }
+  header .wrapper .inner nav {
+    white-space: nowrap;
+  }
+  header .wrapper .inner nav .pc-nav {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 101%;
+    right: -80%;
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s;
+  }
+  header .wrapper .inner nav .pc-nav .nav-list {
+    padding: 2rem 2rem;
+  }
+  header .wrapper .inner nav .pc-nav .nav-list a {
+    color: #fff !important;
+  }
+  header .wrapper .inner nav .pc-nav.on {
+    display: block;
+    right: -8%;
+  }
+  header .wrapper .inner nav .mb-nav {
+    display: block;
+  }
+}/*# sourceMappingURL=header.css.map */

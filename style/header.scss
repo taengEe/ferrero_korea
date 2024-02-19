@@ -1,0 +1,147 @@
+@import "_mixin";
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  transition: all .3s;
+
+  &.on{
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+  }
+  
+  .wrapper{
+    border-bottom: 1px solid rgba(255,255,255,.5);  
+    .inner{
+      @include font_1;
+      width: 1320px;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 0 3%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      nav{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+  
+        .pc-nav{
+          display: flex;
+          justify-content: space-between;
+          li{
+            padding: 2.5rem 57px; 
+            &:last-of-type{
+              padding-right: 0;
+            }
+            a{
+              font-size: 18px;
+              color: #fff;
+              &.on{
+                color: #333;
+              }
+
+              &.change{
+                color: #333;
+              }
+            }
+          }
+        }
+        .mb-nav{
+          display: none;
+          width: 22px;
+          height: 22px;
+          padding: 0;
+          border: none;
+          background: transparent;
+          span{
+            display: block;
+            width: 22px;
+            height: 3px;
+            background: #333;
+            border-radius: 10px;
+            margin-bottom: 4px;
+  
+            &:last-of-type{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1260px){
+  header{
+    .wrapper{
+      .inner{
+        .logo{
+          
+        }
+        nav{
+          white-space: nowrap;
+          .pc-nav{
+            .nav-list{
+              a{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  header{
+    background: #fff;
+    .wrapper{
+      .inner{
+        position: relative;
+        padding: 0;
+        max-width: 90%;
+        .logo{
+          
+        }
+        nav{
+          white-space: nowrap;
+          .pc-nav{
+            display: none;
+            background-color: #333;
+            position: absolute;
+            top: 101%;
+            right: -80%;
+            width: 90%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: flex-start;
+            transition: all .5s;
+            .nav-list{
+              padding: 2rem 2rem;
+              a{
+                color: #fff !important;
+              }
+            }
+
+            &.on{
+              display: block;
+              right: -8%;
+              
+            }
+          }
+          .mb-nav{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

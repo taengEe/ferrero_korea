@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/reset.css">
+  
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="inner">
+        <div class="logo">
+          <img src="./imgs/logo.png" alt="헤더 로고이미지">
+        </div>
+        <nav>
+          <ul class="pc-nav">
+            <li class="nav-list"><a href="#">제품</a></li>
+            <li class="nav-list"><a href="#">팁 및 아이디어</a></li>
+            <li class="nav-list"><a href="#">페레로 로쉐 소개</a></li>
+            <li class="nav-list"><a href="#">품질 및 지속가능성</a></li>
+          </ul>
+          <button class="mb-nav" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+    
+  </header>
+  <main>
+    <section class="main-visual">
+      <h2 class="hidden">메인 비주얼 섹션</h2>
+      <div class="swiper main-visual-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ferrero">
+            <div class="slide-txt">
+              <h3>Tic Tac</h3>
+              <p>언제, 어디서나 상쾌하게</p>
+              <a href="#">MORE</a>
+            </div>
+            
+          </div>
+          <div class="swiper-slide nutella">
+            <div class="slide-txt">
+              <h3>Nutella</h3>
+              <p>사랑을 나누는 다양한 방법</p>
+              <a href="#">MORE</a>
+            </div>
+          </div>
+          <div class="swiper-slide tictac">
+            <div class="slide-txt">
+              <h3>Ferrero Reche</h3>
+              <p>황금 빛 경험</p>
+              <a href="#">MORE</a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination main-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="hidden">페레로에 대해</h2>
+      <article class="about-txt">
+        <h3>페레로 로쉐</h3>
+        <p>금박 포장지 안에서 배어 나오는 향긋한 헤이즐넛 향기와 함께 고소한 통 헤이즐넛을<br/>
+          감싼 부드러운 헤이즐넛 크림 그리고 그 위에 바삭한 웨하스와 마지막으로 잘게 뿌려진<br/>
+          헤이즐넛 조각이 어우려진 완벽한 조화입니다.</p>
+      </article>
+      <article class="approach">
+        <div class="nature">
+          <div class="app-txt">
+            <h3>환경 보호</h3>
+            <p>페레로는 자체 운영에서 환경 효율성을 높이고,<br/>
+            배출량을 줄이고, 포장의 순환성을 향상시키기<br/>
+          위해 노력하고 있습니다.</p>
+          <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="metarial">
+          <div class="app-txt">
+            <h3>원료 공급</h3>
+            <p>페레로는 프로그램을 통해 공급망의 마지막에<br/>
+            있는 농부들에게 권한을 부여하여 투명성을<br/>
+            높이고 환경을 보존합니다.</p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="explosive">
+          <div class="app-txt">
+            <h3>소비 촉진</h3>
+            <p>페레로는 페레로제품의 책임 있는<br/> 소비에 관심을
+            갖고 있습니다. 페레로는 최고의 품질과 신선한
+            제품을<br/> 제공하기 위핸 노력하고 있으며 항상<br/>
+            책임감 있게 소통하기 위해 노력합니다.</p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="together">
+          <div class="app-txt">
+            <h3>역량 강화</h3>
+            <p>페레로는 다양하고 포용적이며 보람 있는 <br/>직장을
+            보장하고, 지역 사회에 힘을 <br/>실어주고, 청소년
+            과 그 가족의 활동적인 <br/>라이프 스타일을 장려하기 위해 노력합니다.</p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="history">
+      <h2 class="hidden">히스토리</h2>
+      <div class="history-bg">
+        <div class="history-txt-box">
+          <div class="history-txt">
+            <div class="swiper history-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <h3>Ferrero's history</h3>
+                  <p>페레로 그룹의 가장 상징적인 브랜드 중 하나인<br/>
+                    페레로 로쉐는 1982년, 이탈리아 피에몬테 주의 산속 작은 마을<br/>
+                    알바(Alba)에서 탄생했습니다.</p>
+                  <p>고급 초콜릿 스페셜티가 주는 모든 즐거움을 대중에게 널리 보급<br/>
+                    하고자 하는 염원에서 영감을 얻은 페레로 로쉐는 처음에는 유럽<br/>
+                    에서 판매했지만 곧 전세계 수백만 명이 가장 좋아하는 초콜릿이<br/>
+                    되었습니다. 오늘날, 페레로 로쉐는 전세계 동종 업계의 리더이<br/>
+                    며 5대륙 140개국에서 판매되고 있습니다.</p>
+                    <a href="#">MORE</a>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Ferrero's history</h3>
+                  <p>페레로 그룹의 가장 상징적인 브랜드 중 하나인<br/>
+                    페레로 로쉐는 1982년, 이탈리아 피에몬테 주의 산속 작은 마을<br/>
+                    알바(Alba)에서 탄생했습니다.</p>
+                  <p>고급 초콜릿 스페셜티가 주는 모든 즐거움을 대중에게 널리 보급<br/>
+                    하고자 하는 염원에서 영감을 얻은 페레로 로쉐는 처음에는 유럽<br/>
+                    에서 판매했지만 곧 전세계 수백만 명이 가장 좋아하는 초콜릿이<br/>
+                    되었습니다. 오늘날, 페레로 로쉐는 전세계 동종 업계의 리더이<br/>
+                    며 5대륙 140개국에서 판매되고 있습니다.</p>
+                    <a href="#">MORE</a>
+                  </div>
+
+                <div class="swiper-slide">
+                  <h3>Ferrero's history</h3>
+                  <p>페레로 그룹의 가장 상징적인 브랜드 중 하나인<br/>
+                    페레로 로쉐는 1982년, 이탈리아 피에몬테 주의 산속 작은 마을<br/>
+                    알바(Alba)에서 탄생했습니다.</p>
+                  <p>고급 초콜릿 스페셜티가 주는 모든 즐거움을 대중에게 널리 보급<br/>
+                    하고자 하는 염원에서 영감을 얻은 페레로 로쉐는 처음에는 유럽<br/>
+                    에서 판매했지만 곧 전세계 수백만 명이 가장 좋아하는 초콜릿이<br/>
+                    되었습니다. 오늘날, 페레로 로쉐는 전세계 동종 업계의 리더이<br/>
+                    며 5대륙 140개국에서 판매되고 있습니다.</p>
+                    <a href="#">MORE</a>
+                  </div>
+              </div>
+            
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </section>
+    <section class="special">
+      <h2 class="hidden">페레로 스페셜</h2>
+      <div class="inner">
+        <div class="sp-txt">
+          <div class="sp-hd">
+            <h3>Ferrero Special</h3>
+            <span>소중한 순간을 페레로와 함께</span>
+          </div>
+          <div class="sp-bd">
+            <h4>골드 페레로 로쉐</h4>
+            <p>금빛 포장지를 벗기고 향과 질감의 맛있는<br/>
+              향연을 만나보세요. 페레로 로쉐는 최고의<br/>
+              헤이즐넛을 구워 부드러운 초콜릿 크림에<br/>
+              담그고 바삭한 웨이퍼와 헤이즐넛 조각을<br/>
+              입힙니다. 페레로 로쉐 스페셜티는 수십 년<br/>
+              에 걸쳐 소중한 사람들을 하나로 만드는 <br/>
+              특별한 선물입니다.
+            </p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="sp-img"><img src="./imgs/sp01.png" alt="페레로 스페셜 이미지"></div>
+      </div>
+    </section>
+    <section class="product">
+      <h2>PRODUCT</h2>
+      <div class="inner">
+        <div class="item">
+          <a href="#">
+            <div class="item-img">
+              <img src="./imgs/item01.png" alt="페레로 3개입">
+            </div>
+            <ul>
+              <li class="item-name">3개입</li>
+              <li class="item-kcal">100g (611Kcal)</li>
+            </ul>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="item-img">
+              <img src="./imgs/item02.png" alt="페레로 3개입">
+            </div>
+            <ul>
+              <li class="item-name">4개입</li>
+              <li class="item-kcal">100g (611Kcal)</li>
+            </ul>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="item-img">
+              <img src="./imgs/item03.png" alt="페레로 3개입">
+            </div>
+            <ul>
+              <li class="item-name">5개입</li>
+              <li class="item-kcal">100g (611Kcal)</li>
+            </ul>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="item-img">
+              <img src="./imgs/item04.png" alt="페레로 3개입">
+            </div>
+            <ul>
+              <li class="item-name">8개입</li>
+              <li class="item-kcal">100g (611Kcal)</li>
+            </ul>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="item-img">
+              <img src="./imgs/item05.png" alt="페레로 3개입">
+            </div>
+            <ul>
+              <li class="item-name">16개입</li>
+              <li class="item-kcal">100g (611Kcal)</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="item-btn">MORE</a>
+    </section>
+  </main>
+  <footer>
+    <h2 class="hidden">푸터</h2>
+    <div class="inner">
+      <div class="ft-logo"><img src="./imgs/ft-logo.png" alt="푸터 로고"></div>
+      <div class="ft-content">
+        <div class="ft-product">
+          <h3>제품</h3>
+          <ul>
+            <li class="ft-link"><a href="#">페레로 로쉐</a></li>
+            <li class="ft-link"><a href="#">누텔라</a></li>
+            <li class="ft-link"><a href="#">틱 택</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3>정보</h3>
+          <ul>
+            <li class="ft-link"><a href="#">FAQ</a></li>
+            <li class="ft-link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>문의</h3>
+          <ul>
+            <li class="ft-link"><a href="#">기술적 요건</a></li>
+            <li class="ft-link"><a href="#">쿠키 정책</a></li>
+            <li class="ft-link"><a href="#">개인정보보호정책</a></li>
+          </ul>
+        </div>
+        <div class="sns">
+          <h3>팔로우</h3>
+          <ul>
+            <li class="ft-link"><a href="#"><img src="./imgs/facebook.png" alt="페이스북"></a></li>
+            <li class="ft-link"><a href="#"><img src="./imgs/instar.png" alt="인스타"></a></li>
+            <li class="ft-link"><a href="#"><img src="./imgs/youtube.png" alt="유튜브"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+</body>
+</html>
